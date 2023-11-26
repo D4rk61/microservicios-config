@@ -1,1 +1,13 @@
+spring:
+  application:
+    name: config-default
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.12:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    prefer-ip-address: true
